@@ -20,6 +20,12 @@
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>github-diane-asset</id>
+			<url>https://maven.pkg.github.com/retropipes/diane-asset</url>
+		</repository>
+	</repositories>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
