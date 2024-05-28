@@ -24,6 +24,8 @@
 		<repository>
 			<id>github-diane-asset</id>
 			<url>https://maven.pkg.github.com/retropipes/diane-asset</url>
+			<username>${env.GITHUB_ACTOR}</username>
+      			<password>${env.GITHUB_TOKEN}</password>
 		</repository>
 	</repositories>
 	<distributionManagement>
