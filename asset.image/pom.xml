@@ -26,13 +26,11 @@
 			<url>https://maven.pkg.github.com/retropipes/diane-asset</url>
 		</repository>
 	</repositories>
-	<servers>
-		<server>
-			<id>github-diane-asset</id>
-			<username>${env.GITHUB_ACTOR}</username>
-      			<password>${env.GITHUB_TOKEN}</password>
-		</server>
-	</servers>
+	<server>
+		<id>github-diane-asset</id>
+		<username>${env.GITHUB_ACTOR}</username>
+		<password>${env.GITHUB_TOKEN}</password>
+	</server>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
