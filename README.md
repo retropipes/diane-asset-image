@@ -1,0 +1,1 @@
+Diane Asset Image module
