@@ -26,11 +26,6 @@
 			<url>https://maven.pkg.github.com/retropipes/diane-asset</url>
 		</repository>
 	</repositories>
-	<server>
-		<id>github-diane-asset</id>
-		<username>${env.GITHUB_ACTOR}</username>
-		<password>${env.GITHUB_TOKEN}</password>
-	</server>
 	<distributionManagement>
 		<repository>
 			<id>github</id>
@@ -38,4 +33,13 @@
 			<url>https://maven.pkg.github.com/retropipes/diane-asset-image</url>
 		</repository>
 	</distributionManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
